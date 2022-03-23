@@ -1,0 +1,110 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    width: 100%;
+    margin: 0 auto;
+    background-color: rgb(18, 18, 19);
+}
+
+.container-pesquisa{
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    padding: 15px;
+}
+
+.container-pesquisa__wrap{
+    width: 390px;
+    background-color: #333;
+    border-radius: 10px;
+    overflow: hidden;
+    padding: 77px 55px 33px 55px;
+}
+
+.container-pesquisa__form{
+    width: 100%;
+}
+
+.container-pesquisa__form-title{
+    display: block;
+    font-size: 30px;
+    color: azure;
+    line-height: 1.2;
+    text-align: center;
+    padding: 0 0 15px 0;
+}
+
+.container-pesquisa__img-wrapper{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container-pesquisa__img-wrapper img{
+    padding-bottom: 10px;
+    padding-top: 10px;
+    width: 150px;
+}
+
+.container-pesquisa__form-description{
+    display: block;
+    font-size: 16px;
+    color: azure;
+    line-height: 1.2;
+    text-align: center;
+    padding: 0 0 15px 0;
+}
+
+.container-pesquisa__form-input{
+    width: 100%;
+    position: relative;
+    border-bottom: 2px solid #adadad;
+    margin-bottom: 37px;
+}
+
+.input{
+    font-size: 15px;
+    color: #fff;
+    line-height: 1.2;
+    border: none;
+    display: block;
+    width: 100%;
+    height: 45px;
+    background-color: transparent;
+    padding: 0 5px;
+}
+
+.input:focus{
+    outline: 0;
+}
+
+.container-pesquisa__form-btn{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-bottom: 13px;
+}
+
+.btn__form{
+    font-size: 15px;
+    border: none;
+    border-radius: 10px;
+    color: #fff;
+    line-height: 1.2;
+    text-transform: uppercase;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 40px;
+    cursor: pointer;
+    background: linear-gradient(to left, #5cc287, #588654);
+}

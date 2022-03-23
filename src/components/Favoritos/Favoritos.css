@@ -1,0 +1,117 @@
+:root {
+    --bg: #474849;
+    --highlight1: #5cc287;
+    --highlight2: #588654;
+    --color: #1a1e24;
+    --font-number: Montserrat, Roboto, Helvetica, Arial, sans-serif;
+    --font-head: "Space Mono", Consolas, Menlo, Monaco, "Courier New", monospace;
+    --font: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  }
+  
+*{
+  margin:0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container{
+  width: 100%;
+  margin: 0 auto;
+}
+
+.container-favoritos{
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  padding: 15px;
+  background-color: #111;
+}
+
+.container-favoritos__wrap{
+  width: 450px;
+  background-color: #333;
+  border-radius: 10px;
+  overflow: hidden;
+  padding: 77px 55px 33px 55px;
+}
+
+.container-favoritos__title{
+  display: block;
+  font-size: 30px;
+  color: azure;
+  line-height: 1.2;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.btn__botao-voltar{
+  width: 100px;
+  margin-bottom: 10px;
+  transition: all 0.5s;
+}
+.btn__botao-voltar img{
+  width: 25px;
+  margin-top: -3px;
+}
+
+.btn__botao-voltar span{
+  font-size: 16px;
+  color: aliceblue;
+}
+
+.btn__botao-voltar:hover{
+  margin-left: -6px;
+  transition: all 0.5s;
+  cursor: pointer;
+}
+
+.container-favoritos__inside-box {
+  overflow: auto;
+  max-height: 65vh;
+}
+
+ul {
+  counter-reset: index;  
+  padding: 0;
+  max-width: 400px;
+  height: 200px;
+}
+
+li {
+  counter-increment: index; 
+  display: block;
+  align-items: center;
+  padding: 12px 0;
+  box-sizing: border-box;
+
+}
+
+li::before {
+  content: counters(index, ".", decimal-leading-zero);
+  font-size: 1.5rem;
+  text-align: right;
+  font-weight: bold;
+  min-width: 40px;
+  padding-right: 12px;
+  font-variant-numeric: tabular-nums;
+  align-self: flex-start;
+  background-image: linear-gradient(to bottom, #5cc287, #588654);
+  background-attachment: fixed;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+li + li {
+  border-top: 1px solid rgba(255,255,255,0.2);
+}
+
+.container-favoritos__text,
+.container-favoritos__text:focus,
+.container-favoritos__text:active {
+  font-size: 16px;
+  color: #FFF !important;
+  text-decoration: none !important;
+}
